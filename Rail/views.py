@@ -9,7 +9,6 @@ from .query import *
 # Create your views here.
 
 def test(request):
-    query = "call xnxx;"
     with connection.cursor() as cursor:
         cursor.execute(query)
         data = cursor.fetchall()
